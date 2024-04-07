@@ -11,7 +11,7 @@ import { RouterOutlet } from '@angular/router';
 })
 //DESDE PERSONAL? porfas
 export class AppComponent {
-  title = 'proyect001'
+  title = 'project001'
   nombre = 'Rodriguez Pablo';
   edad = 40;
   email = 'rpablo@gmail.com';
@@ -49,5 +49,23 @@ export class AppComponent {
 
   generarNumero() {
     return Math.floor(Math.random() * 3) + 1;
+  }
+
+  contador = 1;
+
+  incrementar() {
+    this.contador++;
+  }
+
+  decrementar() {
+    this.contador--;
+  }
+
+  fijarNombre1() {
+    this.nombre = 'Juan';
+  }
+
+  fijarNombre2() {
+    this.nombre = 'Ana';
   }
 }
