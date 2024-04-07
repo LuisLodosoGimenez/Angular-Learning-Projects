@@ -9,7 +9,7 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-//CLARO QUE NO FUNCIONA
+//DESDE PERSONAL?
 export class AppComponent {
   title = 'proyect001'
   nombre = 'Rodriguez Pablo';
