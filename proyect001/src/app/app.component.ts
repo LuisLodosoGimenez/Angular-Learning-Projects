@@ -9,7 +9,9 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
+  title = 'proyect001'
   nombre = 'Rodriguez Pablo';
   edad = 40;
   email = 'rpablo@gmail.com';
