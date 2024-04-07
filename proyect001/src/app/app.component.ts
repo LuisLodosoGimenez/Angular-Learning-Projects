@@ -9,7 +9,7 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-//DESDE PERSONAL?
+//DESDE PERSONAL? porfas
 export class AppComponent {
   title = 'proyect001'
   nombre = 'Rodriguez Pablo';
