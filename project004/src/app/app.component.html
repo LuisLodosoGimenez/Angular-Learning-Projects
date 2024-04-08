@@ -5,17 +5,55 @@
   <button (click)="selector1.fijar(1)">Fijar en 1</button><br>
   <button (click)="selector1.fijar(5)">Fijar en 5</button><br>
   <button (click)="selector1.fijar(10)">Fijar en 10</button>
+  <p></p>
+  <h6>Se llama al método del hijo (el selector) desde el html.</h6>
 </div>
+
+<hr>
 
 <div style="text-align:center">
   <h1>SELECTOR NUMÉRICO 2</h1>
   <app-selectornumerico [minimo]="1" [maximo]="10" #selector2></app-selectornumerico>
   <br>
   <p> 
-    CAMBIAR NÚMERO A: <input type="number" [formControl]="myNumberInput">
-    <button (click)="selector2.fijar(myNumberInput.value)">Fijar en {{myNumberInput.value}}</button>
+    CAMBIAR NÚMERO A: <input type="number" [formControl]="myNumberInput2">
+    <button (click)="selector2.fijar(myNumberInput2.value)">Fijar en {{myNumberInput2.value}}</button>
   </p>
   <p>
     EL NÚMERO DEBE ESTAR COMPRENDIDO ENTRE {{selector1.returnMinimo()}} Y {{selector2.returnMaximo()}}
   </p>
+  <p></p>
+  <h6>Se llama al método del hijo (el selector) desde el html.</h6>
+</div>
+
+<hr>
+
+
+<div style="text-align:center">
+  <h1>SELECTOR NUMÉRICO 1</h1>
+  <app-selectornumerico [minimo]="1" [maximo]="10" #selector3></app-selectornumerico>
+  <br>
+  <button (click)="fijarSelector3(1)">Fijar en 1</button><br>
+  <button (click)="fijarSelector3(5)">Fijar en 5</button><br>
+  <button (click)="fijarSelector3(10)">Fijar en 10</button>
+  <p></p>
+  <h6>Se llama al método del hijo (el selector) desde la clase padre (ts).</h6>
+
+</div>
+
+<hr>
+
+<div style="text-align:center">
+  <h1>SELECTOR NUMÉRICO 2</h1>
+  <app-selectornumerico [minimo]="1" [maximo]="10" #selector4></app-selectornumerico>
+  <br>
+  <p> 
+    CAMBIAR NÚMERO A: <input type="number" [formControl]="myNumberInput4">
+    <button (click)="fijarSelector4(myNumberInput4.value)">Fijar en {{myNumberInput4.value}}</button>
+  </p>
+  <p>
+    EL NÚMERO DEBE ESTAR COMPRENDIDO ENTRE {{selector1.returnMinimo()}} Y {{selector2.returnMaximo()}}
+  </p>
+  <p></p>
+  <h6>Se llama al método del hijo (el selector) desde la clase padre (ts).</h6>
 </div>
