@@ -1,0 +1,53 @@
+<div class="center">
+  <h1>CONVERSIÓN NÚMERO</h1>
+  <div class="contenedor">
+    <div class="columna">
+      <form [formGroup]="formularioConversion" (ngSubmit)="submit()">
+        <p class="center">Ingrese número decimal:
+          <input type="text" formControlName="numerodecimal">
+        </p>
+        <font margin="margin-left=40px" color="red" size="1px"> {{mensaje}}</font>
+        <hr>
+        <br><br>
+        <div class="start">
+          <p>Convertir a:            
+            <input class="tabulacion" type="radio" formControlName="base" value="octal">Octal
+            <input type="radio" formControlName="base" value="hexadecimal">Hexadecimal
+          </p>
+          <br>
+          <p>Elevar a:
+            <select class="tabulacion" formControlName="potencia">
+              <option>No elevar</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </p>  
+          <br>
+          <p>
+            <input type="checkbox" formControlName="largo">Mostrar cantidad de dígitos
+          </p>
+        </div>
+            <br>
+            <button style="margin-left: 200px;"  (click)="submit">Confirmar</button>
+          
+      </form>
+      <br>
+    </div>
+    <div class="columna">
+      <br><br><br><br><br><br><br>@if (mensaje.length) {<br> }
+      <div class="start">
+        @if(mensaje.length){  <p  style= "margin-top: 10px;">Conversion: {{conversion}}</p>  }
+        @else {<p  style= "margin-top: 0px;">Conversion: {{conversion}}</p>}
+        
+        <br>
+        <p>Potencia: {{potenciaNumero}}</p>
+        <br>
+        <p>Cantidad de dígitos: {{cantidad}}</p>  
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+

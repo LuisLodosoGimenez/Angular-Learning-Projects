@@ -1,0 +1,30 @@
+div.center{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.tabulacion{
+    margin-left: 30px;
+}
+
+div.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.columna{
+    width: 50%;
+}
+
+.start{
+    margin-left: 10%;
+    text-align: start;
+}
+
+.center{
+    text-align: center;
+}
+
+
