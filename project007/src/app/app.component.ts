@@ -29,9 +29,9 @@ export class AppComponent {
       this.datoMensaje = ''
     }
     else{
-      this.datoNombre = `Nombre=${this.formularioContacto.value.nombre}`
-      this.datoMail = `Mail=${this.formularioContacto.value.mail}`
-      this.datoMensaje = `Mensaje=${this.formularioContacto.value.mensaje}`
+      this.datoNombre = `Nombre = ${this.formularioContacto.value.nombre}`
+      this.datoMail = `Mail = ${this.formularioContacto.value.mail}`
+      this.datoMensaje = `Mensaje = ${this.formularioContacto.value.mensaje}`
     } 
   }
 }
