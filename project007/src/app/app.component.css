@@ -1,0 +1,13 @@
+div.center{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+p.start{
+    text-align: start;
+}
+
+div.end{
+    text-align: end ;
+}

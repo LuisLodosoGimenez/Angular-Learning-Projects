@@ -1,0 +1,32 @@
+<div class="center">
+  <h1>CONFIRMAR CORREO</h1>
+  <br>
+  <form [formGroup]="formularioContacto" (ngSubmit)="submit()">
+    <p class="start">Nombre:
+      <input type="text" formControlName="nombre">
+    </p>
+    <p class="start" style="text-align: start">Mail:
+      <input type="text" formControlName="mail">
+    </p>
+    <p class="start">
+    Mensaje:
+    <br>
+    <textarea rows="10" cols="80" formControlName="mensaje"></textarea>
+    </p>
+    <div class="end">
+      <button type="submit">Confirmar</button>
+    </div>
+  </form>
+  <div>
+    <p>
+      {{datoNombre}}
+    </p>
+    <p>
+      {{datoMail}}
+    </p>
+    <p>
+      {{datoMensaje}}
+    </p>
+  </div>
+
+</div>
