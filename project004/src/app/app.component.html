@@ -20,7 +20,7 @@
     <button (click)="selector2.fijar(myNumberInput2.value)">Fijar en {{myNumberInput2.value}}</button>
   </p>
   <p>
-    EL NÚMERO DEBE ESTAR COMPRENDIDO ENTRE {{selector1.returnMinimo()}} Y {{selector2.returnMaximo()}}
+    El número debe estar comprendido entre {{selector1.returnMinimo()}} y {{selector2.returnMaximo()}}
   </p>
   <p></p>
   <h6>Se llama al método del hijo (el selector) desde el html.</h6>
@@ -48,11 +48,11 @@
   <app-selectornumerico [minimo]="1" [maximo]="10" #selector4></app-selectornumerico>
   <br>
   <p> 
-    CAMBIAR NÚMERO A: <input type="number" [formControl]="myNumberInput4">
-    <button (click)="fijarSelector4(myNumberInput4.value)">Fijar en {{myNumberInput4.value}}</button>
+    CAMBIAR NÚMERO A: <input type="number" [(ngModel)]="myNumberInput4">
+    <button (click)="fijarSelector4(myNumberInput4)">Fijar en {{myNumberInput4}}</button>
   </p>
   <p>
-    EL NÚMERO DEBE ESTAR COMPRENDIDO ENTRE {{selector1.returnMinimo()}} Y {{selector2.returnMaximo()}}
+    El número debe estar comprendido entre {{selector4.returnMinimo()}} y {{selector4.returnMaximo()}}
   </p>
   <p></p>
   <h6>Se llama al método del hijo (el selector) desde la clase padre (ts).</h6>
