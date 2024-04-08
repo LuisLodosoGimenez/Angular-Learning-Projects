@@ -1,0 +1,33 @@
+<div style="text-align: center;">
+  <h1>LISTA DE ACTIVIDES</h1>
+  <p> Actividad:
+    <input type="text" [formControl]="actividad">
+  </p>
+  <p><button (click)="agregar()">Agregar</button></p>
+  <ol>
+    @if (isListaEmpty()) {
+      <h4>LISTA VACÍA</h4>
+    }@else {
+      <table>
+        <tr>
+          <td>Nº</td>
+          <td>NOMBRE</td>
+          <td></td>
+        </tr>
+        @for(acti of lista;track $index) {
+          <tr>
+            <td>{{$index}}</td>
+            <td>{{acti}}</td>
+            <td><a (click)="borrar($index)" href="#">Borra?</a></td>
+        }
+      </table>
+      
+    <p><button (click)="borrarTodas()">Borrar todas las actividades</button></p>
+    }
+  </ol>
+  <br>
+
+  <H5>ESTA LISTA PERSISTIRÁ A PESAR DE BORRAR EL NAVEGADOR</H5>
+  <H6>DEBERÁ ABRIR EL MISMO NAVEGADOR</H6>
+    
+</div>
