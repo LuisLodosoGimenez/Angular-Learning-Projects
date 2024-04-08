@@ -19,7 +19,7 @@ export class AppComponent {
   formularioConversion = new FormGroup({
     numerodecimal: new FormControl(''),
     base: new FormControl('octal'),
-    potencia: new FormControl('2'),
+    potencia: new FormControl(''),
     largo: new FormControl(true)
   });
 
