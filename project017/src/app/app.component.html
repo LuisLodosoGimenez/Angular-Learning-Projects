@@ -1,0 +1,25 @@
+<div>
+  <h1>TABLA DE DATOS OBTENIDOS DE SERVIDOR WEB</h1>
+
+  <span>
+    <b class="negrita">Ruta del servidor: </b>
+    <a href="https://scratchya.com.ar/vue/datos.php">Servidor Web</a>.
+  </span>
+
+  <br><br>
+
+  <table>
+    <tr>
+      <td>Codigo</td>
+      <td>Descripcion</td>
+      <td>Precio</td>
+    </tr>
+    @for(art of articulos;track art.codigo) {
+    <tr>
+      <td>{{ art.codigo }}</td>
+      <td>{{ art.descripcion }}</td>
+      <td>{{ art.precio }}</td>
+    </tr>
+    }
+  </table>
+</div>
