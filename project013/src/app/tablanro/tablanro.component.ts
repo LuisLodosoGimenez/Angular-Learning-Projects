@@ -11,13 +11,15 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class TablanroComponent {
   nro=0;
+  multiplicadores=0;
   tabla='';
 
   constructor(private activatedRoute: ActivatedRoute) {
     this.activatedRoute.paramMap.subscribe((parametros: ParamMap) => {
       this.nro = parseInt(parametros.get("nro")!);
+      this.multiplicadores = parseInt(parametros.get("terminos")!);
       this.tabla = '';
-      for (let x = 1; x <= 10; x++) {
+      for (let x = 1; x <= parseInt(parametros.get("terminos")!); x++) {
         let t = x * this.nro;
         this.tabla += t + '-';
       }
