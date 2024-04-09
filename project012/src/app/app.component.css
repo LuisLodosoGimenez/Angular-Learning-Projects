@@ -1,13 +1,16 @@
 /* Estilos para el formulario */
-form {
+  form {
     max-width: 400px;
     margin: 0 auto;
     font-family: 'Arial', sans-serif;
+
+    p {
+      color: #45a049;
+      /*margin-bottom: 15px;*/
+    }
   }
   
-  p {
-    margin-bottom: 15px;
-  }
+  
   
   input,
   textarea {

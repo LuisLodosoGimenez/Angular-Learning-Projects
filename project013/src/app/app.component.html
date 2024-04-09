@@ -1,0 +1,14 @@
+<div class="center">
+  <h1>TABLAS DE MULTIPLICAR</h1>
+  <br />
+
+  @for(numero of [2,3,4,5,6,7,8,9,10];track $index) {
+  <span style="margin-right: 2rem">
+    <a routerLink="tabla/{{ numero }}">Tabla del {{ numero }}</a>
+  </span>
+  }
+  <br><br><br><br>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
