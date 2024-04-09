@@ -1,0 +1,30 @@
+<div>
+  <h1>PIPES PERSONALIZADOS</h1>
+  <br>
+  <h3>Números en castellano</h3>
+  <ul>
+    @for(valor of vector;track valor) {
+    <li>
+      {{valor | letras}}
+    </li>
+    }
+  </ul>
+  <br>
+  <h3>Números en inglés</h3>
+  <ul>
+    @for(valor of vector;track valor) {
+    <li>
+      {{valor | letras:'ingles'}}
+    </li>
+    }
+  </ul>
+  <br>
+  <h3>Números en portugués</h3>
+  <ul>
+    @for(valor of vector;track valor) {
+    <li>
+      {{valor | letras:'portugues'}}
+    </li>
+    }
+  </ul>
+</div>
