@@ -1,0 +1,25 @@
+<div class="center">
+  <h1>MÚLTIPO DE 5</h1>
+  <h3>-El botón estará habilitado únicamente cuando se cumpla la condición.-</h3>
+  <br>
+  <br>
+  <form [formGroup]="formularioContacto" (ngSubmit)="submit()">
+    <div class="container">
+      <div style="text-align: end;" class="column">
+        Ingrese un múltiplo de 5:
+      </div>
+      <div style="text-align: center;" class="column">
+        <input type="number" formControlName="numero">
+      </div>
+      <div style="text-align: start;" class="column">
+        @if(this.formularioContacto.get('numero')?.errors?.['multiplo5']) {
+          <span class="margin_left_and_red">(El valor debe ser multiplo de 5)</span>
+          }
+      </div>
+    </div>
+    <br>
+    <button type="submit" [disabled]="formularioContacto.invalid">Confirmar</button>
+  </form>
+  <hr>
+</div>
+

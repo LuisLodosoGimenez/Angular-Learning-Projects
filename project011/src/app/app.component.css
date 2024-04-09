@@ -1,0 +1,20 @@
+div.center{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.margin_left_and_red{
+    margin-left: 20px ;
+    color: red;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column{
+    width: 33%;
+}
