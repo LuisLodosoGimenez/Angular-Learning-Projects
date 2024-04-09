@@ -1,0 +1,18 @@
+div.center{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.start{
+    text-align: start;
+}
+
+.start_left_margin{
+    text-align: start;
+    margin-left: 20px;
+}
+
+.end{
+    text-align: end ;
+}
