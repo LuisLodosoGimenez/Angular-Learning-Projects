@@ -1,0 +1,15 @@
+.center{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.columna{
+    width: 50%;
+}

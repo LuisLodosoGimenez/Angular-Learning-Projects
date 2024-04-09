@@ -1,0 +1,51 @@
+
+<div class="center">
+  <h1>EXPEDIENTE ACADÉMICO</h1>
+  <br>
+  <h3>Calcula si el alumno aprueba. Para ello debe tener mínimo un
+      4 en todas las notas y una media igual o superior a 5.</h3>
+    <form class="contenedor" [formGroup]="formAlumno" (ngSubmit)="submit()">
+      <div class="columna">
+        <p>Dni:
+          <input type="text" formControlName="dni">
+        </p>
+        <p>Nombre:
+          <input type="text" formControlName="nombre">
+        </p>
+      </div>
+      <div class="columna">
+        <div formGroupName="notas">
+          <p>Primer nota:
+            <input type="text" formControlName="nota1">
+          </p>
+          <p>Segunda nota:
+            <input type="text" formControlName="nota2">
+          </p>
+          <p>Tercer nota:
+            <input type="text" formControlName="nota3">
+          </p>
+          <div style="text-align: end;">
+            <p><button style="margin-right: 20%;" type="submit">Confirmar</button></p>
+          </div>
+        </div>
+      </div>
+      
+    </form>
+
+    <div style="text-align: center;">
+      RESULTADO: 
+      @if (resultado == "Debe rellenar todos los campos." || resultado == "DEBE INTRODUCIR NÚMEROS EN LAS NOTAS.") {
+        <font color="red">{{resultado}}</font>
+      }
+      @else if (resultado == "El alumno no ha sido aprobado.") {
+        <font color="orange">{{resultado}}</font>
+      }
+
+      @else {
+        <font color="green">{{resultado}}</font>
+      }
+      
+    
+    </div>
+    <hr>
+</div>
