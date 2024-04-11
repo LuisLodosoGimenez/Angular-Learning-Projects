@@ -1,5 +1,5 @@
-Learning-Angular.
-Small projects developed with Angular.
+# Learning-Angular.
+### Small projects developed with Angular.
 Source: https://www.tutorialesprogramacionya.com/
 
 
@@ -26,4 +26,4 @@ PROJECTS DESCRIPTION
 - project019: 28  Standard pipes. (Example list)
 - project020: 29  Own pipes. (Number list)
 
-*The first number after the name of projects is the class number of the web course*
+*The first number after the name of projects is the class number of the web course.*
